@@ -12,7 +12,7 @@ void setup()
     Serial.begin(115200);
     Serial.setTimeout(20);
     MCreatorLink.setup(Serial);
-    //TEST OF FUNCTIONALITY OF THE BUTTONS
+    //TEST OF FUNCTIONALITY OF THE BUTTONS AND LED
 	pinMode(push1, INPUT);
     pinMode(push2, INPUT);
     pinMode(push3, INPUT);
@@ -22,7 +22,7 @@ void setup()
 
 void loop()
 {
-    //TEST OF FUNCTIONALITY OF THE BUTTONS
+    //TEST OF FUNCTIONALITY OF THE BUTTONS AND LED
 	if (digitalRead(push1) == HIGH)
     {
         digitalWrite(led, HIGH);
